@@ -47,6 +47,21 @@ header {
     color: #fff;
 }
  
+h2 {
+    font-family: Bebas Neue;
+    background-color: #494949;
+    color: #fff;
+    text-align: center;
+}
+
+article {
+  font-family: Bebas Neue;
+  background-color: #494949;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
 /* Style rules for navigation area */
 nav {
     background-color: #fff;
@@ -167,12 +182,19 @@ th {
   text-decoration: none;
 }
 
+.social {
+    display: inline-block;
+    padding: 1%; 
+    width: 20%
+    
+ }
+
 
 /* Style rules for footer content */
 footer {
     background-color: #494949;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 1em;
     clear: left;  
 }
  
