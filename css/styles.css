@@ -19,12 +19,18 @@ img {
     margin-right: auto;
 }
 
+/*Style rules for mobile viewport */
+
+.tab-desk {
+    display: none;
+} 
+
 /* Style rules for header content */
 header {
     background-color: #494949;
     text-align: center;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 1.5em;
+    font-family: Bebas Neue;
+    font-size: 2em;
     color: #fff;
 }
  
@@ -32,6 +38,7 @@ header {
 nav {
     background-color: #fff;
 }
+
 
 nav li {
     display: block;
@@ -49,6 +56,53 @@ nav li a {
     text-decoration: none;
 }
 
+/* Style Rules For Mobile Navigation Area */
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+ 
+
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;  
+}
+ 
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #494949;
+    border: 4px solid #fff;
+    border-radius: 8px;
+}
+
+/* Style rules for map content */
+.map{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style rules for id elements */
+#contact, #contact p a{
+  background-color: #494949;
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+
 /* Style rules for footer content */
 footer {
     background-color: #494949;
@@ -63,3 +117,18 @@ footer a {
     padding: 0.5em;
 }
 
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */  
+.tab-desk {
+    display: block;
+} 
+.mobile, .mobile-nav {
+    display: none;  
+} 
+}
+ 
+/*Media Query for Desktop Viewport */
+
+@media screen and (min-width: 769px), print {
+}
