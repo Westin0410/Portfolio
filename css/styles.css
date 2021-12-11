@@ -5,10 +5,15 @@ Date: 12/10/2021
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img {
+body, header, nav, main, footer, img, article, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */  
+* {  
+        box-sizing: border-box; 
 }
 
 /* Style rule for images */
@@ -19,6 +24,14 @@ img {
     margin-right: auto;
 }
 
+figcaption {
+    background-color: #494949;
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 2em;
+    color: #fff;
+}
+ 
 /*Style rules for mobile viewport */
 
 .tab-desk {
@@ -93,6 +106,33 @@ nav li a {
     margin-right: auto;
 }
 
+/* Style rules for table elements */
+
+table {
+    border: 1px solid #494949;
+    border-collapse: collapse;
+    margin: 20% auto;
+    width: 80%;
+    box-shadow: 4px 8px #888888;
+}
+ 
+caption {
+    font-size: 1.5em;
+    font-weight: bold; 
+    padding: 1%;
+}
+ 
+th, td {
+    border: 1px solid #494949;
+    padding: 2%; 
+}
+ 
+th {
+    background-color: #494949;
+    color: #fff;
+    font-size: 1.15em;
+}
+ 
 /* Style rules for id elements */
 #contact, #contact p a{
   background-color: #494949;
@@ -129,6 +169,13 @@ footer a {
 } 
 }
  
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+}
+
+
 /*Media Query for Desktop Viewport */
 
 @media screen and (min-width: 769px), print {
